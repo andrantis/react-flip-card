@@ -1,18 +1,15 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+
+import Card from "./Card";
 
 class App extends Component {
   render() {
+    const front = <div style={{ backgroundColor: "pink" }}>F</div>;
+    const back = <div style={{ backgroundColor: "yellow" }}>B</div>;
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Card width="120" height="480" front={front} back={back} />
       </div>
     );
   }
