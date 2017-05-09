@@ -9,7 +9,7 @@ class App extends Component {
     const back = <div style={{ backgroundColor: "yellow" }}>B</div>;
     return (
       <div className="App">
-        <Card width="120" height="480" front={front} back={back} />
+        <Card width="320" height="480" front={front} back={back} />
       </div>
     );
   }
